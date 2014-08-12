@@ -1,3 +1,4 @@
+
 # Reproducible Research: Peer Assessment 1
 
 ## Loading and preprocessing the data
@@ -123,7 +124,7 @@ which gives 2304.
 
 **The strategy for filling the missing values:** We use **the mean of the values from the same interval computed from the days with available data**. Using the data from the same time intervals instead of the data from that day - it is based on the idea that if we don't know the number of steps made between 1:00 a.m. and 1:05 a.m., it is more likely to be close to the number of steps made in this night time during other days, then to the number of steps done during a 5-minute-long interval when averaged from all the day.  
 
-Now, we rewrite `activity_new` (we no longer need the data with `NA` values omitted) to make it **the data set with missing data filled by the algorithm above**.
+Now, we rewrite `activity` to make it **the data set with missing data filled by the algorithm above**.
 
 
 ```r

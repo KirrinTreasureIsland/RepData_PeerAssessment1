@@ -300,7 +300,7 @@ axis(1, at = c(1, 61, 121, 181, 241), labels = c(0, 500, 1000, 1500, 2000))
 
 <p><strong>The strategy for filling the missing values:</strong> We use <strong>the mean of the values from the same interval computed from the days with available data</strong>. Using the data from the same time intervals instead of the data from that day - it is based on the idea that if we don&#39;t know the number of steps made between 1:00 a.m. and 1:05 a.m., it is more likely to be close to the number of steps made in this night time during other days, then to the number of steps done during a 5-minute-long interval when averaged from all the day.  </p>
 
-<p>Now, we rewrite <code>activity_new</code> (we no longer need the data with <code>NA</code> values omitted) to make it <strong>the data set with missing data filled by the algorithm above</strong>.</p>
+<p>Now, we rewrite <code>activity</code> to make it <strong>the data set with missing data filled by the algorithm above</strong>.</p>
 
 <pre><code class="r"># we use the mean stored in &#39;interval_means&#39; for the same interval, as where
 # the &#39;NA&#39; appears
